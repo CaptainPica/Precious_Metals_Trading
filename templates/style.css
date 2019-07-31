@@ -44,6 +44,7 @@ footer {
 
 nav {
     height: 40px;
+    background: lightgray;
   }
 
 p {
@@ -117,7 +118,6 @@ p {
 #container-4 {
   overflow: scroll;
 }
-
 
 
 
