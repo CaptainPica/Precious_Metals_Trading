@@ -41,7 +41,7 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 def trainer():
     for metal in ["Gold","Silver","Platinum","Palladium"]:
         RandFor(metal)
-        DepLern(metal)
+        # DepLern(metal)
 
 def RandFor(metal):
     # Reads in and cleans data

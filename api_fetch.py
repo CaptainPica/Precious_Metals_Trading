@@ -2,6 +2,7 @@ from requests import get
 import pandas as pd
 from boto.s3.connection import S3Connection
 from datetime import datetime, timedelta
+import os
 
 def harvest():
     # Gets secret api key from quandl config vars
