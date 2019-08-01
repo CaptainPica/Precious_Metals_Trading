@@ -15,6 +15,8 @@ from pandas import DataFrame
 
 
 # convert series to supervised learning
+    # Below block of code used from 'machinelearningmastery.com' , article title: 'Multivariate Time Series Forecasting with LSTMs in Keras'
+    # Author: Jason Brownlee
 def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 	n_vars = 1 if type(data) is list else data.shape[1]
 	df = DataFrame(data)
