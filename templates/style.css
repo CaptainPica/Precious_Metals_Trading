@@ -1,4 +1,4 @@
- /*
+  /*
  First External CSS Stylesheet
  */
 
@@ -33,7 +33,7 @@ body {
   
   h4 {
     font-size: 55px;
-    color: black;
+    color: gold;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
     margin-left: 200px;
@@ -42,12 +42,22 @@ body {
 
   h5 {
     font-size: 55px;
-    color: black;
+    color: silver;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 200px;
+    text-decoration: underline;
+  }
+
+  h6 {
+    font-size: 55px;
+    color: rgb(231, 228, 228);
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
     margin-left: 150px;
     text-decoration: underline;
   }
+
 
 footer {
     display: block;
@@ -73,6 +83,8 @@ p {
 img {
   height: 550px;
   width: 550px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -120,24 +132,28 @@ img {
       margin-left: auto;
       margin-right: auto;
       display: block;
+      background: black;
   }
   
   #row-2 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    background: black;
 }
 
 #row-3 {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  background: black;
 }
 
 #row-4 {
 margin-left: auto;
 margin-right: auto;
 display: block;
+background: black;
 margin-bottom: 80px;
 }
 
@@ -184,20 +200,75 @@ margin-bottom: 80px;
 #rnn {
   font-weight: bold;
   font-size: 20px;
-  color: black;
+  color: gold;
   text-decoration: underline;
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
 #rf {
   font-weight: bold;
   font-size: 20px;
-  color: black;
+  color: gold;
   text-decoration: underline;
-  margin-left: 72px;
+  margin-left: 52px;
 }
 
+#rnn-2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: silver;
+  text-decoration: underline;
+  margin-left: 25px;
+}
 
+#rf-2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: silver;
+  text-decoration: underline;
+  margin-left: 52px;
+}
+
+#rnn-3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(231, 228, 228);
+  text-decoration: underline;
+  margin-left: 25px;
+}
+
+#rf-3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(231, 228, 228);
+  text-decoration: underline;
+  margin-left: 52px;
+}
+
+#rnn-4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(175, 171, 171);
+  text-decoration: underline;
+  margin-left: 25px;
+}
+
+#rf-4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(175, 171, 171);
+  text-decoration: underline;
+  margin-left: 52px;
+}
+
+#h6-2 {
+  font-size: 55px;
+  color: rgb(175, 171, 171);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-left: 150px;
+  text-decoration: underline;
+}
 
 
   /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
