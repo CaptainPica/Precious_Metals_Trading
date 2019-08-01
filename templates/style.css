@@ -31,6 +31,24 @@ body {
     font-weight: bold;
   }
   
+  h4 {
+    font-size: 55px;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 200px;
+    text-decoration: underline;
+  }
+
+  h5 {
+    font-size: 55px;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 150px;
+    text-decoration: underline;
+  }
+
 footer {
     display: block;
     background: #5f5e5e;
@@ -52,6 +70,18 @@ p {
   color: black;  
 }
 
+img {
+  height: 550px;
+  width: 550px;
+}
+
+
+.row {
+  margin-top: 75px;
+
+}
+
+
 
 
 /* Selecting elements by ID */
@@ -72,7 +102,7 @@ p {
   
   #box-2 {
     background: white;
-    margin-top: 50px;
+    margin-top: 70px;
   }
   
   #box-3 {
@@ -86,6 +116,7 @@ p {
   }
   
   #row-1 {
+    margin-top: 15px;
       margin-left: auto;
       margin-right: auto;
       display: block;
@@ -95,6 +126,19 @@ p {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+#row-3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#row-4 {
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-bottom: 80px;
 }
 
 #navbarDropdown {
@@ -122,7 +166,38 @@ p {
 
 #header {
   text-decoration: underline;
+  margin-top: 5px;
 }
+
+#navbarDropdown2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-left: 25px;
+}
+
+#menu2 {
+  margin-left: 72px;
+}
+
+#rnn {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-decoration: underline;
+  margin-left: 35px;
+}
+
+#rf {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-decoration: underline;
+  margin-left: 72px;
+}
+
+
 
 
   /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
@@ -144,3 +219,4 @@ p {
       visibility: visible;
     }
   }
+  
