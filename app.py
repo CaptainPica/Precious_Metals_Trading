@@ -9,9 +9,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/update")
-def new_info():
-    harvest()
+@app.route("/update/<which>")
+def new_info(which="a"):
+    harvest(which)
     return redirect(url_for("home"))
 
 @app.route("/manip")

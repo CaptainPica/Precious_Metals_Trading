@@ -4,7 +4,7 @@ from boto.s3.connection import S3Connection
 from datetime import datetime, timedelta
 # import os
 
-def harvest():
+def harvest(which):
     # Gets secret api key from quandl config vars
     # quandl = S3Connection(os.environ['use_key'])
     quandl = "SigGdWFysHuacAVCDsCd"
@@ -40,11 +40,11 @@ def harvest():
     url_list = [CMEgold_futures,CMEgold_futures2,CMEsilver_futures,CMEsilver_futures2,CMEpalladium_futures,CMEpalladium_futures2,CMEplatinum_futures,CMEplatinum_futures2,CME_TenYear_futures,CME_TenYear_futures2,ICE_USD_futures,ICE_USD_futures2,ICE_ZAR_futures,ICE_ZAR_futures2,Gold_OpenInt,Silver_OpenInt,Palladium_OpenInt,Platinum_OpenInt]
     
     # This is here to avoid the timeout
-    how_many = [0,1,2,3,4,5]
-    info_list = [get(url_list[i]).json() for i in how_many]
+    how_many = {"a":[0,1,2,3,4,5],"b":[6,7,8,9,10,11],"c":[12,13,14,15,16,17]}
+    info_list = [get(url_list[i]).json() for i in how_many[which]]
     df_list = [pd.DataFrame(info["dataset"]["data"],columns=info["dataset"]["column_names"]) for info in info_list]
-    for i in how_many:
-        df_list[i].to_csv(f"data/csv/Data_Raw_{i}.csv")
+    for i in range(len(df_list)):
+        df_list[i].to_csv(f"data/csv/Data_Raw_{how_many[which][i]}.csv")
     # # Gets the info in iterable list
     # info_list = [get(url).json() for url in url_list]
     # # Gets info in pd dataframes in iterable list
