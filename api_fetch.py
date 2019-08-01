@@ -42,6 +42,7 @@ def harvest():
     # This is here to avoid the timeout
     how_many = [0,1,2,3,4,5]
     info_list = [get(url_list[i]).json() for i in how_many]
+    df_list = [pd.DataFrame(info["dataset"]["data"],columns=info["dataset"]["column_names"]) for info in info_list]
     for i in how_many:
         df_list[i].to_csv(f"data/csv/Data_Raw_{i}.csv")
     # # Gets the info in iterable list
