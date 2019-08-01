@@ -49,7 +49,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="d3Style.css">
+
 
 
 </head>
@@ -88,6 +88,21 @@
         </li>
 
 
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Signals/PnL
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menu2">
+            <a class="dropdown-item" href="gold_finaltable.html">Gold</a>
+            <a class="dropdown-item" href="silver_finaltable.html">Silver</a>
+            <a class="dropdown-item" href="platinum_finaltable.html">Platinum</a>
+            <a class="dropdown-item" href="palladium_finaltable.html">Palladium</a>
+          </div>
+        </li>
+
+
+
       </ul>
 
     </div>
@@ -104,7 +119,7 @@
   <div class="row">
     <div class="col-md-12 text-center">
         <h1 id="header">Precious Metals Trading</h1>
-        <p>The purpose of this project was to analyze the value of metals such as gold over time.
+        <p>The purpose of this project was to analyze the value of metals such as gold, silver, platinum, and palladium over time.
         </p>
     </div>
 </div>
@@ -116,30 +131,65 @@
 
 
 <aside class="container">
-  <div class="box text-center" id="box-2">
-      <h2>Select Type of Metal:</h2>
+  <div class="box" id="box-2">
+      <h2>Select Type of Metal for Data:</h2>
       <hr class="my-4">
 
+
       <div class="row" id="row-1">
+        <h4>Gold</h4>
           <a href="gold.html">
               <img src="gold.jpeg" class="img-thumbnail">
           </a>
 
-          <a href="silver.html">
-              <img src="silver.jpg" class="img-thumbnail">
-          </a>
+          <a href="GOLD_DL_EC.png" id="rnn">RNN Model Equity Curve</a>
+          <a href="GOLD_RF.png" id="rf">RF Model Equity Curve</a>
+
       </div>
 
 
 
+
       <div class="row" id="row-2">
+          <h5>Silver</h5>
+          <a href="silver.html">
+              <img src="silver.jpg" class="img-thumbnail">
+          </a>
+
+          <a href="SILVER_DL_EC.png" id="rnn-2">RNN Model Equity Curve</a>
+          <a href="SILVER_RF.png" id="rf-2">RF Model Equity Curve</a>
+
+
+      </div>
+
+
+
+
+      <div class="row" id="row-3">
+          <h6>Platinum</h6>
           <a href="platinum.html">
           <img src="platinum.jpg" class="img-thumbnail">
           </a>
 
+          <a href="PLATINUM_DL_EC.png" id="rnn-3">RNN Model Equity Curve</a>
+          <a href="PLATINUM_RF.png" id="rf-3">RF Model Equity Curve</a>
+
+
+      </div>
+
+
+          <div class="row" id="row-4">
+              <h6 id="h6-2">Palladium</h6>
           <a href="palladium.html">
           <img src="palladium.jpg" class="img-thumbnail">
+        </a>
+
+        <a href="PALLADIUM_DL_EC.png" id="rnn-4">RNN Model Equity Curve</a>
+        <a href="PALLADIUM_RF.png" id="rf-4">RF Model Equity Curve</a>
+
           </div>
+
+
       </div>
 
 
@@ -154,8 +204,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
-  <script src="app.js"></script>
-  <script src="table.js"></script>
+
 
   <footer style="text-align: center" id="foot">
     Data harvested with Quandl

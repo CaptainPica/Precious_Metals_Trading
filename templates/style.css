@@ -1,4 +1,4 @@
- /*
+  /*
  First External CSS Stylesheet
  */
 
@@ -31,6 +31,34 @@ body {
     font-weight: bold;
   }
   
+  h4 {
+    font-size: 55px;
+    color: gold;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 200px;
+    text-decoration: underline;
+  }
+
+  h5 {
+    font-size: 55px;
+    color: silver;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 200px;
+    text-decoration: underline;
+  }
+
+  h6 {
+    font-size: 55px;
+    color: rgb(231, 228, 228);
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 150px;
+    text-decoration: underline;
+  }
+
+
 footer {
     display: block;
     background: #5f5e5e;
@@ -52,6 +80,20 @@ p {
   color: black;  
 }
 
+img {
+  height: 550px;
+  width: 550px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+.row {
+  margin-top: 75px;
+
+}
+
+
 
 
 /* Selecting elements by ID */
@@ -72,7 +114,7 @@ p {
   
   #box-2 {
     background: white;
-    margin-top: 50px;
+    margin-top: 70px;
   }
   
   #box-3 {
@@ -86,15 +128,33 @@ p {
   }
   
   #row-1 {
+    margin-top: 15px;
       margin-left: auto;
       margin-right: auto;
       display: block;
+      background: black;
   }
   
   #row-2 {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    background: black;
+}
+
+#row-3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: black;
+}
+
+#row-4 {
+margin-left: auto;
+margin-right: auto;
+display: block;
+background: black;
+margin-bottom: 80px;
 }
 
 #navbarDropdown {
@@ -122,6 +182,92 @@ p {
 
 #header {
   text-decoration: underline;
+  margin-top: 5px;
+}
+
+#navbarDropdown2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-left: 25px;
+}
+
+#menu2 {
+  margin-left: 72px;
+}
+
+#rnn {
+  font-weight: bold;
+  font-size: 20px;
+  color: gold;
+  text-decoration: underline;
+  margin-left: 25px;
+}
+
+#rf {
+  font-weight: bold;
+  font-size: 20px;
+  color: gold;
+  text-decoration: underline;
+  margin-left: 52px;
+}
+
+#rnn-2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: silver;
+  text-decoration: underline;
+  margin-left: 25px;
+}
+
+#rf-2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: silver;
+  text-decoration: underline;
+  margin-left: 52px;
+}
+
+#rnn-3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(231, 228, 228);
+  text-decoration: underline;
+  margin-left: 25px;
+}
+
+#rf-3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(231, 228, 228);
+  text-decoration: underline;
+  margin-left: 52px;
+}
+
+#rnn-4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(175, 171, 171);
+  text-decoration: underline;
+  margin-left: 25px;
+}
+
+#rf-4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(175, 171, 171);
+  text-decoration: underline;
+  margin-left: 52px;
+}
+
+#h6-2 {
+  font-size: 55px;
+  color: rgb(175, 171, 171);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-left: 150px;
+  text-decoration: underline;
 }
 
 
@@ -144,3 +290,4 @@ p {
       visibility: visible;
     }
   }
+  
