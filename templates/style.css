@@ -17,10 +17,11 @@ body {
   }
   
   h2 {
-    font-size: 40px;
-    color: #0eb180;
+    font-size: 28px;
+    color: black;
     font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
+    font-weight: bold; 
+    text-decoration: underline;
   }
 
   h3 {
@@ -119,6 +120,9 @@ p {
   overflow: scroll;
 }
 
+#header {
+  text-decoration: underline;
+}
 
 
   /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
@@ -140,4 +144,3 @@ p {
       visibility: visible;
     }
   }
-  
