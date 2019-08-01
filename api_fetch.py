@@ -2,11 +2,12 @@ from requests import get
 import pandas as pd
 from boto.s3.connection import S3Connection
 from datetime import datetime, timedelta
-import os
+# import os
 
 def harvest():
     # Gets secret api key from quandl config vars
-    quandl = S3Connection(os.environ['use_key'])
+    # quandl = S3Connection(os.environ['use_key'])
+    quandl = "SigGdWFysHuacAVCDsCd"
 
     # Group 1, keep Change, Settle, Volume, Previous Day Open Interest
     # The 1 futures of the metals are also harvested for only the daily
