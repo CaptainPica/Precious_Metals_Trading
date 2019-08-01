@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
-from api_fetch import harvest
+from api_fetch import harvest, manipulate
 from model_train import trainer
 
 app = Flask(__name__)
@@ -12,6 +12,11 @@ def home():
 @app.route("/update")
 def new_info():
     harvest()
+    return redirect(url_for("home"))
+
+@app.route("/manip")
+def manip_info():
+    manipulate()
     return redirect(url_for("home"))
 
 @app.route("/predict")
