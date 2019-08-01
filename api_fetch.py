@@ -39,7 +39,7 @@ def harvest():
     # Sets the URLs in iterable list
     url_list = [CMEgold_futures,CMEgold_futures2,CMEsilver_futures,CMEsilver_futures2,CMEpalladium_futures,CMEpalladium_futures2,CMEplatinum_futures,CMEplatinum_futures2,CME_TenYear_futures,CME_TenYear_futures2,ICE_USD_futures,ICE_USD_futures2,ICE_ZAR_futures,ICE_ZAR_futures2,Gold_OpenInt,Silver_OpenInt,Palladium_OpenInt,Platinum_OpenInt]
     
-    info = get(url).json()
+    info = get(url_list[0]).json()
     # # Gets the info in iterable list
     # info_list = [get(url).json() for url in url_list]
     # # Gets info in pd dataframes in iterable list
