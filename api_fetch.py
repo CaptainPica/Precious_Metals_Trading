@@ -38,12 +38,14 @@ def harvest():
 
     # Sets the URLs in iterable list
     url_list = [CMEgold_futures,CMEgold_futures2,CMEsilver_futures,CMEsilver_futures2,CMEpalladium_futures,CMEpalladium_futures2,CMEplatinum_futures,CMEplatinum_futures2,CME_TenYear_futures,CME_TenYear_futures2,ICE_USD_futures,ICE_USD_futures2,ICE_ZAR_futures,ICE_ZAR_futures2,Gold_OpenInt,Silver_OpenInt,Palladium_OpenInt,Platinum_OpenInt]
-    # Gets the info in iterable list
-    info_list = [get(url).json() for url in url_list]
-    # Gets info in pd dataframes in iterable list
-    df_list = [pd.DataFrame(info["dataset"]["data"],columns=info["dataset"]["column_names"]) for info in info_list]
-    for i in range(len(df_list)):
-        df_list[i].to_csv(f"data/csv/Data_Raw_{i}.csv")
+    
+    info = get(url).json()
+    # # Gets the info in iterable list
+    # info_list = [get(url).json() for url in url_list]
+    # # Gets info in pd dataframes in iterable list
+    # df_list = [pd.DataFrame(info["dataset"]["data"],columns=info["dataset"]["column_names"]) for info in info_list]
+    # for i in range(len(df_list)):
+    #     df_list[i].to_csv(f"data/csv/Data_Raw_{i}.csv")
     return 1
 
 def manipulate():
