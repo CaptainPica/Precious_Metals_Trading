@@ -21,6 +21,24 @@ def giveaction():
         container.append(strength)
     return jsonify(container)
 
+@app.route("/decision/<mine>")
+def popin(mine="Gold"):
+    mine = mine.capitalize()
+    return render_template("data.html",into=mine)
+
+@app.route("/tableinfo/<dollars>")
+def money(dollars="Gold"):
+    data_dl = read_csv(f"data/csv/{dollars}_DL_FinalTable.csv",index_col=0)
+    data_rf = read_csv(f"data/csv/{dollars}_FinalTable_RF.csv",index_col=0)
+    data_dl = data_dl.fillna("Missing")
+    data_rf = data_rf.fillna("Missing")
+    data_dl = data_dl.to_dict("split")
+    data_rf = data_rf.to_dict("split")
+    del data_dl["index"]
+    del data_rf["index"]
+    combined = {"DL":data_dl,"RF":data_rf}
+    return jsonify(combined)
+
 @app.route("/update/<which>")
 def new_info(which="a"):
     harvest(which)

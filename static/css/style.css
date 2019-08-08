@@ -3,6 +3,7 @@ body {
     background-image: url(../images/US_Treasury.svg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container-fluid {
