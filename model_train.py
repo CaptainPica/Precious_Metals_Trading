@@ -40,7 +40,12 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 		agg.dropna(inplace=True)
 	return agg
 
-def trainer():
+def trainer_DL():
+    for metal in ["Gold","Silver","Platinum","Palladium"]:
+        # RandFor(metal)
+        DepLern(metal)
+
+def trainer_RF():
     for metal in ["Gold","Silver","Platinum","Palladium"]:
         RandFor(metal)
         # DepLern(metal)
@@ -121,7 +126,7 @@ def RandFor(metal):
     fig = plt.figure()
     ax = weekly2['EC'].plot(title=f'{metal} RF Model Equity Curve')
     ax.invert_xaxis()
-    fig.savefig(f'graphs/{metal}_RF.png')
+    fig.savefig(f'static/images/{metal}_RF.png')
     weekly2.to_csv(f"data/csv/{metal}_FinalTable_RF.csv",index=False)
 
     # Returns 1 to signal successful completion
@@ -221,7 +226,7 @@ def DepLern(metal):
     fig = plt.figure()
     ax = weekly2['EC'].plot(title=f'{metal} RNN Model Equity Curve')
     ax.invert_xaxis()
-    fig.savefig(f'graphs/{metal}_DL_EC.png')
+    fig.savefig(f'static/images/{metal}_DL_EC.png')
 
     weekly2.to_csv(f"data/csv/{metal}_DL_FinalTable.csv")
 

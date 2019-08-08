@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: gold;
     background-image: url(../images/US_Treasury.svg);
     background-position: center;
     background-size: cover;
@@ -32,6 +32,7 @@ body {
     text-shadow: 2px 2px silver;
     color: black;
     font-family: 'Leckerli One', cursive;
+    margin-bottom: .8em;
 }
 
 #thing1, #thing2 {
@@ -71,4 +72,24 @@ table>tbody>tr:nth-child(2n)>td{
 
 table>tbody>tr:nth-child(2n+1):hover>td{
     background: green;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+img {
+    height: 27vh;
 }

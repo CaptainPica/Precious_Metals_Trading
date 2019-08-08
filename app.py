@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, jsonify
 from api_fetch import harvest, manipulate
-from model_train import trainer
+from model_train import trainer_DL, trainer_RF
 from pandas import read_csv
 
 app = Flask(__name__)
@@ -49,9 +49,14 @@ def manip_info():
     manipulate()
     return redirect(url_for("home"))
 
-@app.route("/predict")
+@app.route("/predict_DL")
 def crystal_ball():
-    trainer()
+    trainer_DL()
+    return redirect(url_for("home"))
+
+@app.route("/predict_RF")
+def quartz_ball():
+    trainer_RF()
     return redirect(url_for("home"))
 
 if __name__ == "__main__":
